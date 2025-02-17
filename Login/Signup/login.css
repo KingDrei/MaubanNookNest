@@ -1,0 +1,138 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('/MNN\ 2.0/kugunan.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: fixed;
+  width: 100%;
+  font-size: 17px;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Login container styles */
+.LOGINcontainer {
+  width: 420px;
+  background: #0B5563;
+  color: aliceblue;
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+
+.LOGINcontainer h1 {
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+}
+
+.inputbox {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin: 30px 0;
+}
+
+.inputbox input {
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgb(255, 254, 254);
+  border-radius: 40px;
+  font-size: 16px;
+  padding: 20px 45px 20px 20px;
+  color: rgb(253, 252, 252);
+  transition: border-color 0.3s ease;
+}
+
+.inputbox input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.inputbox > i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+  accent-color: white;
+  margin-right: 3px;
+}
+
+.remember-forgot a {
+  color: white;
+  text-decoration: none;
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+button {
+  height: 45px;
+  width: 100%;
+  background: rgb(243, 238, 238);
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  
+  cursor: pointer;
+  font-size: 16px;
+  color: rgb(138, 136, 136);
+  font-weight: 600;
+  transition: color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  color: #0B5563;
+  background-color: rgb(218, 218, 218);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.8);
+}
+
+.registerLink {
+  font-size: 14.5px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.registerLink p a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.registerLink p a:hover {
+  text-decoration: underline;
+}

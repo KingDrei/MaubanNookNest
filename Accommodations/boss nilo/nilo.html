@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boss Nilo's Guest House - MaubanNookNest</title>
+  <link rel="stylesheet" href="nilo.css">
+</head>
+<body>
+  <header>
+    <div class="logo"> 
+      <img src="/MNN 2.0/nook nest..png" alt="Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/MNN 2.0/MNN2.0.html">Home</a></li>
+        <li><a href="/MNN 2.0/Accommodations/Accomodations.html">Accommodations</a></li>
+        <li><a href="/MNN 2.0/Tourist Spot/TouristSpot.html">Destinations</a></li>
+        <li><a href="/MNN 2.0/Contact Us/ContactUs.html">Contact</a></li>
+        <li><a href="/MNN 2.0/About Us/About.html">About</a></li>
+        <li><a href="/MNN 2.0/Login/Signup/login.html" class="loginButton">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div>
+      <h1 class="section-title">BOSS NILO'S GUEST HOUSES</h1>
+      <hr class="underline">
+    </div>
+    <section class="tourist-spots-section1">
+      <div class="gallery">
+        <img src="/Pictures/Accomodation/boss nilo/1.jpg" alt="Tourist Spot 1">
+              <img src="/Pictures/Accomodation/boss nilo/2.jpg" alt="Tourist Spot 1">
+              <img src="/Pictures/Accomodation/boss nilo/3.jpg" alt="Tourist Spot 1">
+              <img src="/Pictures/Accomodation/boss nilo/4.jpg" alt="Tourist Spot 1">
+              <img src="/Pictures/Accomodation/boss nilo/5.jpg" alt="Tourist Spot 1">
+              <img src="/Pictures/Accomodation/boss nilo/6.jpg" alt="Tourist Spot 1">
+      </div>
+    </section>
+    <section class="tourist-spots-section">
+      <div class="flex-container">
+        <div class="service-info">
+          <h2>What We Offer</h2>
+          <p>Boss Nilo's Guest Houses offers you what is the best for you!:</p>
+          <ol>
+            <li>Luxurious accommodations</li>
+            <li>Clean and So good room</li>
+            <li>Quality food meal</li>
+            <li>Quality massage service</li>
+
+           
+          </ol>
+          <!-- Rooms offered -->
+          <h2>Rooms Offered</h2>
+          <ul>
+            <li>Deluxe Room - Starting at ₱2,500 per night (2pax)</li>
+            <li>Premium Suite- Starting at ₱5,500 per night  (5-10pax)</li>
+            <li>Penthouse - Starting at ₱8,000 per night (10-20pax)</li>
+          </ul>
+          <h2>Additional Fees</h2>
+      <ul>
+        <li>Parking Fee: Free </li>
+        <li>Miscellaneous Fee: Free</li>
+        <li>Corkage Fee: Free</li>
+      </ul>
+          <!-- <a href="/MNN 2.0/Booking/AquazulBooking.html" class="book-now-button">Book Now</a> -->
+        </div>
+
+        <div class="booking-container">
+          <h2>Book Your Stay</h2>
+          <form id="booking-form">
+            <label for="room-type">Select Room Type:</label>
+            <select id="room-type" name="room-type" required>
+              <option value="" disabled selected>Select a room type</option>
+              <option value="Deluxe Room">Deluxe Room</option>
+              <option value="Premium Suite">Premium Suite</option>
+              <option value="Penthouse">Penthouse</option>
+            </select>
+
+            <label for="check-in-date">Check-in Date:</label>
+            <input type="date" id="check-in-date" name="check-in-date" required>
+
+            <label for="check-out-date">Check-out Date:</label>
+            <input type="date" id="check-out-date" name="check-out-date" required>
+
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" required>
+
+            <div id="availability-message"></div>
+
+            <button type="button" class="check-availability-button">Check Availability</button>
+
+            <label for="total-price">Total Price:</label>
+            <input type="text" id="total-price" name="total-price" readonly>
+
+            <button type="submit" class="book-now-button">Book Now</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+
+  <footer>
+    <!-- Your footer content here -->
+  </footer>
+  <script src="nilo.js"></script>
+  
+</body>
+</html>

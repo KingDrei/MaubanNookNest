@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Information - MaubanNookNest</title>
+  <link rel="stylesheet" href="boooking.css">
+</head>
+<body>
+  <header>
+    <div class="logo"> 
+      <img src="/MNN 2.0/nook nest..png" alt="Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/MNN 2.0/MNN2.0.html">Home</a></li>
+        <li><a href="/MNN 2.0/Destinations/Destinations.html">Destinations</a></li>
+        <li><a href="/MNN 2.0/Accommodations/Accomodations.html">Accommodations</a></li>
+        <li><a href="/MNN 2.0/Tourist Spot/TouristSpot.html">Tourist Spot</a></li>
+        <li><a href="/MNN 2.0/Contact Us/ContactUs.html">Contact</a></li>
+        <li><a href="/MNN 2.0/About Us/About.html">About</a></li>
+        <li><a href="/MNN 2.0/Login/Signup/login.html" class="loginButton">Login</a></li>
+      </ul>
+    </nav>
+  </header> 
+
+  <main>
+    <section class="booking-section">
+       <h1 class="booking-tag">Booking Information</h1>
+       <hr class="underline1">
+
+       <div class="booking-form">
+         <form id="bookingForm" action="/submit_booking.php" method="POST">
+           <label for="name">Full Name:</label>
+           <input type="text" id="name" name="name" required>
+
+           <label for="email">Email:</label>
+           <input type="email" id="email" name="email" required>
+
+           <label for="phone">Phone Number:</label>
+           <input type="tel" id="phone" name="phone" required>
+
+           <label for="checkin">Check-in Date:</label>
+           <input type="date" id="checkin" name="checkin" required>
+
+           <label for="checkout">Check-out Date:</label>
+           <input type="date" id="checkout" name="checkout" required>
+
+           <label for="guests">Number of Guests:</label>
+           <input type="number" id="guests" name="guests" min="1" required>
+
+           <label for="comments">Comments:</label>
+           <textarea id="comments" name="comments" rows="4"></textarea>
+
+           <button type="button" onclick="validateForm()">Submit Booking</button>
+         </form>
+       </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Your footer content here -->
+  </footer>
+
+  <script src="booking.js"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  
+  background: url('/MNN\ 2.0/kugunan.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+  height: 70px;
+  background: #0b5463;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  font-size: 17px;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  width: 350px;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 30px;
+  gap: 25px;
+}
+
+ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  display: inline-block;
+}
+
+li a::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0;
+  background: rgb(255, 255, 255);
+  transition: all 1s;
+}
+
+li a:hover::after {
+  width: 100%;
+}
+.container{
+  margin-top: 100px;
+}
+.contact-form {
+  max-width: 600px;
+  margin: 50px auto;
+  
+}
+
+.contact-form .container {
+  background-color: #0b5463;
+  border-radius: 5px;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h1 {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"]{
+  width: 60%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.form-group textarea {
+  width: 90%;
+  height: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+ 
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+button[type="submit"]:hover {
+  background-color: #555;
+}
+@media screen and (min-width: 601px) {
+  .menu-toggle {
+      display: none;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .menu-toggle {
+    display: block; /* Show the hamburger menu on smaller screens */
+  }
+  nav ul {
+    display: none; /* Hide the navigation links by default on smaller screens */
+  }
+  nav ul.show {
+    display: flex; /* Show the navigation links when the menu is toggled */
+    flex-direction: column; /* Stack the links vertically */
+    position: absolute;
+    top: 70px; /* Adjust the top position to avoid overlapping the header */
+    left: 0;
+    width: 100%;
+    background-color: #0b5463;
+    padding: 10px;
+  }
+  nav ul li {
+    margin-bottom: 10px;
+  }
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .tourist-spots-section h1{
+    font-size: 35px;
+  }
+  .logo{
+    margin: 0 150px 0 0px;
+    margin-right: 150px;
+  }
+  .logo img{
+    width: 200px;
+    
+  }
+  .gallery img {
+    width: 100px; /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  .contact-form{
+    width: 80%;
+    font-size: 80%;
+  }
+}
